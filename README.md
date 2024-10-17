@@ -68,13 +68,12 @@ networks:
 
 # Sur le docker mysql, dans la SGBD :
 
-```mysql -u root -p
-```
-CREATE DATABASE guacamole_db;
-```
-```
-CREATE USER 'guacamole_user'@'%' IDENTIFIED BY '!!!MOTDEPASSE!!!';
-```
+```mysql -u root -p```
+
+```CREATE DATABASE guacamole_db;```
+
+```CREATE USER 'guacamole_user'@'%' IDENTIFIED BY '!!!MOTDEPASSE!!!';```
+
 ```
 GRANT SELECT,INSERT,UPDATE,DELETE ON guacamole_db.* TO 'guacamole_user'@'%';
 FLUSH PRIVILEGES;
