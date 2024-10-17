@@ -68,19 +68,22 @@ networks:
 
 # Sur le docker mysql, dans la SGBD :
 
-```mysql -u root -p```
+```
+mysql -u root -p
+```
+## Entrer le mdp définit dans le docker-compose, puis
 
-```CREATE DATABASE guacamole_db;```
+```
+CREATE DATABASE guacamole_db;
+```
 
-```CREATE USER 'guacamole_user'@'%' IDENTIFIED BY '!!!MOTDEPASSE!!!';```
-
+```
+CREATE USER 'guacamole_user'@'%' IDENTIFIED BY '!!!MOTDEPASSE!!!';
+```
+## Enfin
 ```
 GRANT SELECT,INSERT,UPDATE,DELETE ON guacamole_db.* TO 'guacamole_user'@'%';
 FLUSH PRIVILEGES;
-```
-## Then : 
-
-```quit
 ```
 
 # Sur le Serveur debian 
