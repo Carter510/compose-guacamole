@@ -70,7 +70,6 @@ networks:
 
 ```mysql -u root -p
 ```
-```
 CREATE DATABASE guacamole_db;
 ```
 ```
